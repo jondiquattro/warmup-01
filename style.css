@@ -3,13 +3,30 @@
     border: 2px solid black;
 }
 
-#header {
-    background: blue;
-    display: flex;
-    height: 15vh;
-    width: 100%;
-    flex-direction: row;
+/* Header -> Content -> Left -> Right -> Footer */ */
+#header{
+    background: chartreuse;
+}
 
+#body{
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    order: 1;
+}
+#left-side{
+    order: 2;
+}
+#right-side{
+    order: 3;
+}
+@media screen and (min-width: 600px) {
+
+#header{
+    background: red;
+    height: 15vh;
 }
 #body{
     display: flex;
@@ -17,83 +34,26 @@
     align-content: space-between;
     align-content:center;
 }
+
+#left-side{
+    order: 1;
+    height: 70vh;
+    background: blue;
+    width: 18%;
+}
 #content{
-    background: coral;
+    order: 2;
+    background: violet;
     width: 64%;
 }
-#left-side{
-    background: violet;
-    width: 18%;
-    height: 70vh;
-}
 #right-side{
-    background: greenyellow;
+    order: 3;
+    background: olivedrab;
     width: 18%;
-
 }
 #footer{
-    background: blueviolet;
     height: 15vh;
-
+    background: orangered;
 
 }
-#body {
-    background-color: pink;
-  }
-
-  @media only screen and (max-width: 600px) {
-    *{  
-        box-sizing: border-box;
-        border: 2px solid black;
-    }
-    
-    #header {
-        background: blue;
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        height: 20vh;
-    
-    }
-    #body{
-        display: flex;
-        flex-direction: column;
-        height: 20vh;
-
-
-    }
-    #content{
-        background: coral;
-        width: 100%;
-        order: 1;
-        height: 20vh;
-
-    }
-    #left-side{
-        background: violet;
-        width: 100%;
-        order: 2;
-        height: 20vh;
-
-    }
-    #right-side{
-        background: greenyellow;
-        width: 100%;
-        order: 3;
-        height: 20vh;
-
-    
-    }
-    #footer{
-        background: blueviolet;
-        height: 20vh;
-
-    
-    }
-    #body {
-        background-color: pink;
-        height: 20vh;
-
-      }
-    
-  }
+}
