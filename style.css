@@ -1,0 +1,42 @@
+*{  
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+#header {
+    background-color: purple;
+    height: 20vh;
+}
+#content {
+    order: 2;
+    background-color: orangered;
+    width: 60vw;
+    height: 60vh
+}
+#left-side {
+    order: 1;
+    background-color: mediumseagreen;
+    width: 20vw;
+}
+#right-side{
+    order: 3;
+    background-color: yellowgreen;
+    width: 20vw;
+
+}
+#footer{
+    background-color: fuchsia;
+    height: 18vh;
+
+    
+}
+/* Header -> Content -> Left -> Right -> Footer */ 
+
+@media screen and (min-width: 600px) {
+
+    #body{
+        display: flex;
+    }
+    #content {
+        background-color: blue;
+    }
+}
