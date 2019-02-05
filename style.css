@@ -3,23 +3,29 @@
     border: 2px solid black;
 }
 #header {
-    background-color: bisque;
+    background-color: purple;
+    height: 20vh;
 }
 #content {
     order: 1;
     /* order 2 */
     background-color: red;
-}
+
 #left-side {
-    order: 2;
-    background-color: green;
+    order: 1;
+    background-color: mediumseagreen;
+    width: 20vw;
 }
 #right-side{
     order: 3;
-    background-color: purple;
+    background-color: yellowgreen;
+    width: 20vw;
+
 }
 #footer{
-    background-color: goldenrod;
+    background-color: fuchsia;
+    height: 18vh;
+
     
 }
 /* Header -> Content -> Left -> Right -> Footer */ 
