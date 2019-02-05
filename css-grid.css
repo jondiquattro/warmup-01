@@ -1,0 +1,74 @@
+
+/* credit Tanner for showing me how to do this */
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+#header{
+    background-color: red;
+    height: 15%;
+}
+#content{
+    display: grid;
+    height: 70%;
+}
+#left-side{
+    background-color: aqua;
+    order: 1;
+}
+#content{
+    background-color:lawngreen;
+    order: 2;
+}
+#right-side{
+    background-color: blue;
+    order: 3;
+}
+#footer{
+    background-color: orange;
+    height: 15%;
+}
+
+#header {
+    background-color: aqua;
+}
+
+
+
+
+@media only screen and (min-width: 600px){
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    #header{
+        background-color: bisque;
+        height: 20vh;
+    }
+    #body{
+        height: 62vh;
+        display: grid;
+        /* 1fr takes up remainder of width */
+        grid-template-columns: 20% 1fr 20%;
+        
+    }
+    #left-side{
+        background-color: aqua;
+        order: 1;
+    }
+    #content{
+        height: 65vh;
+        background-color:red;
+        order: 2;
+    }
+    #right-side{
+        background-color: purple;
+        order: 3;
+    }
+    #footer{
+        background-color: goldenrod;
+        height: 20vh;
+    }
+}
+

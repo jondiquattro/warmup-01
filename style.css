@@ -7,11 +7,10 @@
     height: 20vh;
 }
 #content {
-    order: 2;
-    background-color: orangered;
-    width: 60vw;
-    height: 60vh
-}
+    order: 1;
+    /* order 2 */
+    background-color: red;
+
 #left-side {
     order: 1;
     background-color: mediumseagreen;
@@ -31,7 +30,7 @@
 }
 /* Header -> Content -> Left -> Right -> Footer */ 
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
 
     #body{
         display: flex;
@@ -39,4 +38,4 @@
     #content {
         background-color: blue;
     }
-}
+} */
