@@ -1,20 +1,28 @@
 
-/* credit Tanner for showing me how to do this */
-
 body{
     width: 100vw;
     height: 100vh;
+    box-sizing: border-box;
+
 }
 #header{
     background-color: red;
-    height: 15%;
+    height: 12vh;
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    
 }
 #content{
+    box-sizing: border-box;
+
     display: grid;
-    height: 70%;
+    height:25vh;
+    
 }
 #left-side{
-    background-color: aqua;
+    background-color: burlywood;
+    height:25vh;
     order: 1;
 }
 #content{
@@ -23,6 +31,8 @@ body{
 }
 #right-side{
     background-color: blue;
+    height: 25vh;
+
     order: 3;
 }
 #footer{
@@ -30,14 +40,8 @@ body{
     height: 15%;
 }
 
-#header {
-    background-color: aqua;
-}
 
-
-
-
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 800px){
     body{
         width: 100vw;
         height: 100vh;
